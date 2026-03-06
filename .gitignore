@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+# CLion / CMake build directories
+cmake-build-*/
+
+# JetBrains IDE project files
+.idea/
+*.iml
