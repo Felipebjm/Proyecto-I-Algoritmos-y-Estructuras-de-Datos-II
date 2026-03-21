@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstring>
 
-// Incluye lo necesario según el sistema operativo
+// Incluye lo necesario para correr dependiendo del el sistema operativo
 #ifdef _WIN32
     #include <windows.h>
     #include <psapi.h>
@@ -59,7 +59,6 @@ int main() {
                   << " | Latencia: "  << latencia       << " µs"
                   << std::endl;
     }
-
     //No se libera memoria
     return 0;
 }
