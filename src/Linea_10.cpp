@@ -19,7 +19,7 @@ long getRamMB() {
 #ifdef _WIN32
     PROCESS_MEMORY_COUNTERS pmc;
     GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc));
-    return pmc.WorkingSetSize / (1024 * 1024);
+    return pmc.WorkingSetSize / (1024 * 1024); //Convertir de bytes a MB
 #else
     std::ifstream f("/proc/self/status");
     std::string linea;

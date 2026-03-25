@@ -51,7 +51,7 @@ int main()
     for(int i = 0; i < 100000; i++)
         lista.push_back("Persona" + to_string(i));
 
-    string nombreBuscado = "Persona99999";
+    string nombreBuscado = "Persona9999";
 
     int baseVariable;
     stackBase = (long long)&baseVariable;
